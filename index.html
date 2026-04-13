@@ -37,159 +37,77 @@
         </div>
     </header>
 
-    <!-- Category Navigation -->
-    <section class="container">
-        <div class="category-pills">
-            <a href="reviews.html?cat=restaurants" class="pill">Restaurants</a>
-            <a href="reviews.html?cat=desserts" class="pill active">Desserts</a>
-            <a href="reviews.html?cat=brunch" class="pill">Brunch</a>
-            <a href="reviews.html?cat=date-night" class="pill">Date Night</a>
-            <a href="reviews.html?cat=cheap-eats" class="pill">Cheap Eats</a>
-            <a href="reviews.html?cat=hidden-gems" class="pill">Hidden Gems</a>
-        </div>
-    </section>
-
-    <!-- Featured Section -->
+    <!-- Lists Grid -->
     <section class="container section">
-        <h2>Trending in Phoenix</h2>
-        <div class="grid">
-            <!-- Card 1 -->
-            <a href="posts/chz-burger-phx.html" class="card">
-                <div class="card-img-wrapper">
-                    <span class="card-badge">Restaurant</span>
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800" alt="Delicious Burger">
+        <h2 style="margin-bottom: 30px; text-align: center;">Best of the Valley</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 30px;">
+            
+            <!-- Phoenix -->
+            <a href="#" class="card">
+                <div class="card-img-wrapper" style="height: 250px;">
+                    <img src="assets/phoenix.png" alt="Phoenix Dining">
                 </div>
-                <div class="card-content">
-                    <div class="card-metadata">
-                        <span>Downtown Phoenix</span>
-                        <span>$$</span>
-                    </div>
-                    <h3 class="card-title">ChzBurger Phx: The Ultimate Smash</h4>
-                    <p class="card-description">The crispiest edges in the valley packed inside a locally baked potato bun.</p>
-                    <div class="card-footer">
-                        <span class="rating">★★★★★</span>
-                        <span class="btn-outline" style="padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Read</span>
-                    </div>
+                <div class="card-content" style="text-align: center; background: var(--terracotta);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin: 10px 0; color: var(--white);">Best of Phoenix</h3>
+                    <p style="color: var(--sand); font-weight: 500;">Downtown cocktails, hidden patios, and top-tier tacos.</p>
                 </div>
             </a>
 
-            <!-- Card 2 -->
-            <a href="posts/cholla-cafe.html" class="card">
-                <div class="card-img-wrapper">
-                    <span class="card-badge">Brunch</span>
-                    <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&q=80&w=800" alt="Avocado Toast">
+            <!-- Scottsdale -->
+            <a href="#" class="card">
+                <div class="card-img-wrapper" style="height: 250px;">
+                    <img src="assets/scottsdale.png" alt="Scottsdale Brunch">
                 </div>
-                <div class="card-content">
-                    <div class="card-metadata">
-                        <span>Scottsdale</span>
-                        <span>$$$</span>
-                    </div>
-                    <h3 class="card-title">Cholla Cafe's Desert Brunch</h4>
-                    <p class="card-description">Sipping prickly pear mimosas beneath the shade of Camelback Mountain.</p>
-                    <div class="card-footer">
-                        <span class="rating">★★★★☆</span>
-                        <span class="btn-outline" style="padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Read</span>
-                    </div>
+                <div class="card-content" style="text-align: center; background: var(--cactus-green);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin: 10px 0; color: var(--white);">Best of Scottsdale</h3>
+                    <p style="color: var(--sand); font-weight: 500;">The ultimate guide to upscale dining and stylish brunch.</p>
                 </div>
             </a>
 
-            <!-- Card 3 -->
-            <a href="posts/mesa-tacos.html" class="card">
-                <div class="card-img-wrapper">
-                    <span class="card-badge">Hidden Gem</span>
-                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=800" alt="Tacos">
+            <!-- Tempe -->
+            <a href="#" class="card">
+                <div class="card-img-wrapper" style="height: 250px;">
+                    <img src="assets/tempe.png" alt="Tempe Food">
                 </div>
-                <div class="card-content">
-                    <div class="card-metadata">
-                        <span>Mesa</span>
-                        <span>$</span>
-                    </div>
-                    <h3 class="card-title">El Rincon Al Pastor</h4>
-                    <p class="card-description">A late-night taco stand that puts most sit-down Mexican spots to shame.</p>
-                    <div class="card-footer">
-                        <span class="rating">★★★★★</span>
-                        <span class="btn-outline" style="padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Read</span>
-                    </div>
+                <div class="card-content" style="text-align: center; background: var(--sunset-orange);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin: 10px 0; color: var(--charcoal);">Best of Tempe</h3>
+                    <p style="color: var(--charcoal); font-weight: 500;">Late night bites, college-town gems, and great global eats.</p>
                 </div>
             </a>
-        </div>
-    </section>
 
-    <!-- Best Sweet Treats -->
-    <section class="container section" style="padding-top: 0;">
-        <h2>Best Sweet Treats</h2>
-        <div class="grid">
-            <!-- Dessert 1 -->
-            <a href="posts/gelato-spot.html" class="card">
-                <div class="card-img-wrapper">
-                    <span class="card-badge">Dessert</span>
-                    <img src="https://images.unsplash.com/photo-1563805042-7684c8e9e533?auto=format&fit=crop&q=80&w=800" alt="Gelato">
+            <!-- Mesa -->
+            <a href="#" class="card">
+                <div class="card-img-wrapper" style="height: 250px;">
+                    <img src="assets/mesa.png" alt="Mesa Mexican Food">
                 </div>
-                <div class="card-content">
-                    <div class="card-metadata">
-                        <span>Tempe</span>
-                        <span>$$</span>
-                    </div>
-                    <h3 class="card-title">The Gelato Spot</h4>
-                    <p class="card-description">Authentic Italian gelato perfect for cooling down on a 110-degree summer day.</p>
-                    <div class="card-footer">
-                        <span class="rating">★★★★☆</span>
-                        <span class="btn-outline" style="padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Read</span>
-                    </div>
+                <div class="card-content" style="text-align: center; background: var(--terracotta);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin: 10px 0; color: var(--white);">Best of Mesa</h3>
+                    <p style="color: var(--sand); font-weight: 500;">Unrivaled Asian food districts and incredible authentic tacos.</p>
                 </div>
             </a>
             
-            <!-- Dessert 2 -->
-            <a href="posts/sugar-rush.html" class="card">
-                <div class="card-img-wrapper">
-                    <span class="card-badge">Dessert</span>
-                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800" alt="Donut">
+            <!-- Gilbert -->
+            <a href="#" class="card">
+                <div class="card-img-wrapper" style="height: 250px;">
+                    <img src="assets/gilbert.jpg" alt="Gilbert Dining">
                 </div>
-                <div class="card-content">
-                    <div class="card-metadata">
-                        <span>Chandler</span>
-                        <span>$</span>
-                    </div>
-                    <h3 class="card-title">Sugar Rush Bakery</h4>
-                    <p class="card-description">Gourmet donuts packed with flavor and definitely Instagram-worthy.</p>
-                    <div class="card-footer">
-                        <span class="rating">★★★★★</span>
-                        <span class="btn-outline" style="padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Read</span>
-                    </div>
+                <div class="card-content" style="text-align: center; background: var(--sunset-orange);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin: 10px 0; color: var(--charcoal);">Best of Gilbert</h3>
+                    <p style="color: var(--charcoal); font-weight: 500;">Heritage District highlights, massive cookies, and BBQ.</p>
                 </div>
             </a>
             
-            <!-- Dessert 3 -->
-            <a href="posts/sweet-republic.html" class="card">
-                <div class="card-img-wrapper">
-                    <span class="card-badge">Dessert</span>
-                    <img src="https://images.unsplash.com/photo-1570197781417-0a5237500ee3?auto=format&fit=crop&q=80&w=800" alt="Ice cream">
+            <!-- Chandler -->
+            <a href="#" class="card">
+                <div class="card-img-wrapper" style="height: 250px;">
+                    <img src="assets/chandler.jpg" alt="Chandler Sweets">
                 </div>
-                <div class="card-content">
-                    <div class="card-metadata">
-                        <span>Scottsdale</span>
-                        <span>$$</span>
-                    </div>
-                    <h3 class="card-title">Sweet Republic Scoops</h4>
-                    <p class="card-description">House-made waffle cones and incredibly creative local flavor profiles.</p>
-                    <div class="card-footer">
-                        <span class="rating">★★★★★</span>
-                        <span class="btn-outline" style="padding: 5px 15px; border-radius: 20px; font-size: 0.9rem;">Read</span>
-                    </div>
+                <div class="card-content" style="text-align: center; background: var(--cactus-green);">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin: 10px 0; color: var(--white);">Best of Chandler</h3>
+                    <p style="color: var(--sand); font-weight: 500;">Modern bakeries, craft coffee, and elevated neighborhood eats.</p>
                 </div>
             </a>
-        </div>
-    </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter-section">
-        <div class="container">
-            <h2>Never Miss a Bite.</h2>
-            <p>Join our newsletter for the latest hidden gems, exclusive foodie collabs, and Valley restaurant news.</p>
-            <form class="newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Subscribed!');">
-                <input type="email" placeholder="Enter your email address" required>
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
         </div>
     </section>
 
