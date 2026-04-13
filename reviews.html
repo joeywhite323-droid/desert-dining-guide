@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Reviews | Desert Dining Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Desert Dining</a>
+            <div class="navbar-nav" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="reviews.html" style="color: var(--terracotta);">Reviews</a>
+                <a href="lists.html">Best Of Lists</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div style="background-color: var(--white); padding: 60px 0; border-bottom: 1px solid var(--light-gray); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; color: var(--terracotta); margin-bottom: 10px;">The Review Feed</h1>
+            <p style="color: var(--text-gray); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">Honest thoughts on every bite in the Valley. Use the filters below to find exactly what you're craving.</p>
+        </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <section class="container" style="padding-top: 40px;">
+        <div class="category-pills" style="margin-top: 0;">
+            <a href="#" class="pill active" data-filter="all">All Reviews</a>
+            <a href="#" class="pill" data-filter="restaurants">Restaurants</a>
+            <a href="#" class="pill" data-filter="desserts">Desserts</a>
+            <a href="#" class="pill" data-filter="brunch">Brunch</a>
+            <a href="#" class="pill" data-filter="hidden-gems">Hidden Gems</a>
+            <a href="#" class="pill" data-filter="phx">Phoenix</a>
+            <a href="#" class="pill" data-filter="scottsdale">Scottsdale</a>
+        </div>
+    </section>
+
+    <!-- Reviews Grid -->
+    <section class="container section" style="padding-top: 0;">
+        <div class="grid" id="reviewsGrid">
+            
+            <!-- Restaurant 1 -->
+            <a href="posts/chz-burger-phx.html" class="card" data-category="restaurants phx">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Burger</span>
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&q=80&w=800" alt="Burger">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Phoenix</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">ChzBurger Phx</h4>
+                    <p class="card-description">The crispiest edges in the valley packed inside a locally baked potato bun.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Restaurant 2 -->
+            <a href="posts/cholla-cafe.html" class="card" data-category="restaurants brunch scottsdale">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Brunch</span>
+                    <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&q=80&w=800" alt="Avocado Toast">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Scottsdale</span>
+                        <span>$$$</span>
+                    </div>
+                    <h3 class="card-title">Cholla Cafe</h4>
+                    <p class="card-description">Sipping prickly pear mimosas beneath the shade of Camelback Mountain.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Restaurant 3 -->
+            <a href="posts/mesa-tacos.html" class="card" data-category="restaurants hidden-gems">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Mexican</span>
+                    <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=800" alt="Tacos">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Mesa</span>
+                        <span>$</span>
+                    </div>
+                    <h3 class="card-title">El Rincon Al Pastor</h4>
+                    <p class="card-description">A late-night taco stand that puts most sit-down Mexican spots to shame.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Restaurant 4 -->
+            <a href="#" class="card" data-category="restaurants date-night phx">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Italian</span>
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&q=80&w=800" alt="Pasta">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Phoenix</span>
+                        <span>$$$</span>
+                    </div>
+                    <h3 class="card-title">Bianco's Trattoria</h4>
+                    <p class="card-description">Handmade pasta and an incredible moody atmosphere perfect for a date.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Restaurant 5 -->
+            <a href="#" class="card" data-category="restaurants asian scottsdale">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Asian Fusion</span>
+                    <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=800" alt="Ramen">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Scottsdale</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">Neon Noodle</h4>
+                    <p class="card-description">A chic Tokyo-inspired izakaya with the best tonkotsu in town.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Dessert 1 -->
+            <a href="posts/gelato-spot.html" class="card" data-category="desserts hidden-gems">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Gelato</span>
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c8e9e533?auto=format&fit=crop&q=80&w=800" alt="Gelato">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Tempe</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">The Gelato Spot</h4>
+                    <p class="card-description">Authentic Italian gelato perfect for cooling down on a 110-degree summer day.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Dessert 2 -->
+            <a href="posts/sugar-rush.html" class="card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Bakery</span>
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&q=80&w=800" alt="Donuts">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Chandler</span>
+                        <span>$</span>
+                    </div>
+                    <h3 class="card-title">Sugar Rush Bakery</h4>
+                    <p class="card-description">Gourmet donuts packed with flavor and definitely Instagram-worthy.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Dessert 3 -->
+            <a href="posts/sweet-republic.html" class="card" data-category="desserts scottsdale">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Ice Cream</span>
+                    <img src="https://images.unsplash.com/photo-1570197781417-0a5237500ee3?auto=format&fit=crop&q=80&w=800" alt="Ice Cream">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Scottsdale</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">Sweet Republic Scoops</h4>
+                    <p class="card-description">House-made waffle cones and incredibly creative local flavor profiles.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Dessert 4 -->
+            <a href="#" class="card" data-category="desserts phx hidden-gems">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Pastries</span>
+                    <img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?auto=format&fit=crop&q=80&w=800" alt="Croissant">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Phoenix</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">Crisp Croissanterie</h4>
+                    <p class="card-description">Flaky layers of buttery goodness from a tiny walk-up window downtown.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Dessert 5 -->
+            <a href="#" class="card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Cookies</span>
+                    <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&q=80&w=800" alt="Cookies">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Gilbert</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">Crave Cookies</h4>
+                    <p class="card-description">Warm, gooey, massive cookies that rotate flavors weekly.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="index.html" class="footer-brand">Desert Dining</a>
+            <p>&copy; 2026 Desert Dining Guide. Made with ❤️ in Phoenix, AZ.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

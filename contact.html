@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Desert Dining Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Desert Dining</a>
+            <div class="navbar-nav" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="lists.html">Best Of Lists</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" style="color: var(--terracotta);">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+    <div class="container section" style="max-width: 800px;">
+        <h1 style="color: var(--terracotta); font-size: 3rem; text-align: center; margin-bottom: 20px;">Let's Chat!</h1>
+        <p style="text-align: center; color: var(--text-gray); margin-bottom: 40px; font-size: 1.1rem;">Got a hidden gem I need to try? Want to collaborate on a sponsored post? Just want to say hi? Drop me a line below.</p>
+
+        <div style="background: var(--white); padding: 40px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+            <!-- Formspree fallback action since it's an example -->
+            <form action="https://formspree.io/f/example" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+                
+                <div>
+                    <label for="name" style="font-weight: 600; display: block; margin-bottom: 5px;">Name</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 15px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: inherit; font-size: 1rem;">
+                </div>
+
+                <div>
+                    <label for="email" style="font-weight: 600; display: block; margin-bottom: 5px;">Email</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 15px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: inherit; font-size: 1rem;">
+                </div>
+                
+                <div>
+                    <label for="topic" style="font-weight: 600; display: block; margin-bottom: 5px;">Topic</label>
+                    <select id="topic" name="topic" style="width: 100%; padding: 15px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: inherit; font-size: 1rem; background: var(--white);">
+                        <option value="review-request">Review Request</option>
+                        <option value="collaboration">Brand Collaboration / Sponsored Post</option>
+                        <option value="general">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message" style="font-weight: 600; display: block; margin-bottom: 5px;">Message</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 15px; border: 1px solid var(--light-gray); border-radius: 8px; font-family: inherit; font-size: 1rem; resize: vertical;"></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="align-self: flex-start;">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="index.html" class="footer-brand">Desert Dining</a>
+            <p>&copy; 2026 Desert Dining Guide. Made with ❤️ in Phoenix, AZ.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
