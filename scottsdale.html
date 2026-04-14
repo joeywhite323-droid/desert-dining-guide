@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Best of Scottsdale | Desert Dining Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">Desert Dining</a>
+            <div class="navbar-nav" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="reviews.html" style="color: var(--terracotta);">Reviews</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div style="background-color: var(--white); padding: 60px 0; border-bottom: 1px solid var(--light-gray); text-align: center;">
+        <div class="container">
+            <h1 style="font-size: 3rem; color: var(--terracotta); margin-bottom: 10px;">The Best of Scottsdale</h1>
+            <p style="color: var(--text-gray); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">The absolutely perfect curated list of food in Scottsdale.</p>
+        </div>
+    </div>
+
+    <!-- Filter Bar -->
+    <section class="container" style="padding-top: 40px;">
+        <div class="category-pills" style="margin-top: 0;">
+            <a href="#" class="pill active" data-filter="all">All Reviews</a>
+            <a href="#" class="pill" data-filter="restaurants">Restaurants</a>
+            <a href="#" class="pill" data-filter="desserts">Desserts</a>
+            <a href="#" class="pill" data-filter="brunch">Brunch</a>
+            <a href="#" class="pill" data-filter="hidden-gems">Hidden Gems</a>
+                                                                                </div>
+    </section>
+
+    <!-- Reviews Grid -->
+    <section class="container section" style="padding-top: 0;">
+        <div class="grid" id="reviewsGrid">
+<!-- Restaurant 2 -->
+            <a href="posts/cholla-cafe.html" class="card" data-category="restaurants brunch scottsdale">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Brunch</span>
+                    <img src="https://images.unsplash.com/photo-1550304943-4f24f54ddde9?auto=format&fit=crop&q=80&w=800" alt="Avocado Toast">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Scottsdale</span>
+                        <span>$$$</span>
+                    </div>
+                    <h3 class="card-title">Cholla Cafe</h4>
+                    <p class="card-description">Sipping prickly pear mimosas beneath the shade of Camelback Mountain.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★☆</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Restaurant 5 -->
+            <a href="#" class="card" data-category="restaurants asian scottsdale">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Asian Fusion</span>
+                    <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&q=80&w=800" alt="Ramen">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Scottsdale</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">Neon Noodle</h4>
+                    <p class="card-description">A chic Tokyo-inspired izakaya with the best tonkotsu in town.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Dessert 3 -->
+            <a href="posts/sweet-republic.html" class="card" data-category="desserts scottsdale">
+                <div class="card-img-wrapper">
+                    <span class="card-badge">Ice Cream</span>
+                    <img src="https://images.unsplash.com/photo-1570197781417-0a5237500ee3?auto=format&fit=crop&q=80&w=800" alt="Ice Cream">
+                </div>
+                <div class="card-content">
+                    <div class="card-metadata">
+                        <span>Scottsdale</span>
+                        <span>$$</span>
+                    </div>
+                    <h3 class="card-title">Sweet Republic Scoops</h4>
+                    <p class="card-description">House-made waffle cones and incredibly creative local flavor profiles.</p>
+                    <div class="card-footer">
+                        <span class="rating">★★★★★</span>
+                    </div>
+                </div>
+            </a>
+
+            
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <h2>Never Miss a Bite.</h2>
+            <p>Join our newsletter for the latest hidden gems, exclusive foodie collabs, and Valley restaurant news.</p>
+            <form class="newsletter-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Subscribed!');">
+                <input type="email" placeholder="Enter your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <a href="index.html" class="footer-brand">Desert Dining</a>
+            <p>&copy; 2026 Desert Dining Guide. Made with ❤️ in Phoenix, AZ.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
